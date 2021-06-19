@@ -1,12 +1,157 @@
+
+<!--  {% load static %} https://colorhunt.co/palette/179373 <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css"> -->
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
+
+<head>
+    <Title>Ryan Robinson</Title>
+  <style>
+  body {
+    background-color: #F8F8F8!important;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#profile-wrapper {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+}
+
+#name {
+    padding: 20px 0px 0px 0px;
+}
+
+#webpage {
+    padding: 30px 100px 0px 100px;
+    /* background-color: #EEEEEE!important;*/
+}
+
+#navbar {
+    padding: 0px 100px;
+}
+
+#biography {
+    padding: 0px 20px 0px 50px;
+}
+
+#bio_info {
+    padding: 30px 0px 0px 0px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <div class="container" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <h3>Ryan Robinson</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+
+
+</head>
+
 <body>
-  
-  hello world
+    <br>
+    <div class="container" id="webpage">
+        <div class="row">
+            <div class="col-md-3" id="profile-wrapper">
 
+                <img id="profile-pic" src="{%static 'images/ryanprofilepic.jpg' %}">
+                <div id="name">
+                    <h4>Ryan Robinson</h4>
+                    <p.a>CS Undergrad Student</p.a>
+                    <br>
+                    <a href="https://www.virginia.edu/">The University of Virginia</a>
+                </div>
+
+
+            </div>
+            <div class="col-md-9" id="biography">
+
+                <h3>Biography</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. <br> <br>Orem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <div class="container" id="bio_info">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Interests</h5>
+                            <ul>
+                                <li>Web Development</li>
+                                <li>Networking</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Education</h5>
+                            <ul>
+                                <li>BS in Computer Science, 2022</li>
+                                <small><i>The University of Virgina</i></small>
+                                <li>Advanced Diploma, 2019</li>
+                                <small><i>Loudoun County High School</i></small>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </body>
-
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
